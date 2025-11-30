@@ -16,3 +16,10 @@ Die >> faces [
 
 	^ faces
 ]
+
+{ #category : 'initialization' }
+Die >> initialize [
+
+	super initialize.
+	faces := 6
+]
