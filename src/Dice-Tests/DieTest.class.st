@@ -18,6 +18,12 @@ DieTest >> testInitializeIsOk [
 ]
 
 { #category : 'tests' }
+DieTest >> testPrintRepresentation [
+
+	self assert: (Die withFaces: 6) printString equals: 'a Die (6)'
+]
+
+{ #category : 'tests' }
 DieTest >> testRolling [
 
 	| d |
