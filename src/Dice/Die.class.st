@@ -17,6 +17,12 @@ Die >> faces [
 	^ faces
 ]
 
+{ #category : 'accessing' }
+Die >> faces: anInteger [
+
+	faces := anInteger
+]
+
 { #category : 'initialization' }
 Die >> initialize [
 
