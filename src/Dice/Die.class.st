@@ -23,3 +23,9 @@ Die >> initialize [
 	super initialize.
 	faces := 6
 ]
+
+{ #category : 'api' }
+Die >> roll [
+
+	^ faces atRandom
+]
