@@ -39,6 +39,12 @@ DieHandleTest >> testRolling [
 ]
 
 { #category : 'tests' }
+DieHandleTest >> testSimpleHandle [
+
+	self assert: 2 D20 diceNumber equals: 2
+]
+
+{ #category : 'tests' }
 DieHandleTest >> testSumOfHandles [
 
 	| hd1 hd2 hd3 |
