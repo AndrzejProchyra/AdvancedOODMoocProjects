@@ -28,6 +28,15 @@ DieHandleTest >> testCreationAdding [
 ]
 
 { #category : 'tests' }
+DieHandleTest >> testDefaultDice [
+
+	self assert: 2 D20 diceNumber equals: 2.
+	self assert: 3 D4 diceNumber equals: 3.
+	self assert: 1 D6 diceNumber equals: 1.
+	self assert: 7 D10 diceNumber equals: 7
+]
+
+{ #category : 'tests' }
 DieHandleTest >> testRolling [
 
 	| handle |
