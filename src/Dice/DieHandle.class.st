@@ -12,6 +12,16 @@ Class {
 }
 
 { #category : 'adding' }
+DieHandle >> + aDieHandle [
+
+	| newHandle |
+	newHandle := self class new.
+	self fillUp: newHandle.
+	aDieHandle fillUp: newHandle.
+	^ newHandle
+]
+
+{ #category : 'adding' }
 DieHandle >> addDie: aDie [
 
 	dice add: aDie
@@ -21,6 +31,12 @@ DieHandle >> addDie: aDie [
 DieHandle >> diceNumber [
 
 	^ dice size
+]
+
+{ #category : 'adding' }
+DieHandle >> fillUp: aDieHandle [
+
+	dice do: [ :die | aDieHandle addDie: die ]
 ]
 
 { #category : 'initialization' }
