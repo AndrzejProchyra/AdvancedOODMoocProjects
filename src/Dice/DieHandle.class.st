@@ -29,3 +29,9 @@ DieHandle >> initialize [
 	super initialize.
 	dice := OrderedCollection new
 ]
+
+{ #category : 'adding' }
+DieHandle >> roll [
+
+	^ dice sum: #roll
+]
