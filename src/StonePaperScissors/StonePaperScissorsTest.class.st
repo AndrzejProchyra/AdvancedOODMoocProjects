@@ -24,7 +24,7 @@ StonePaperScissorsTest >> testScissorsAgainstStoneIsLosing [
 ]
 
 { #category : 'tests' }
-StonePaperScissorsTest >> testStoneAgainstPaperIsWinning [
+StonePaperScissorsTest >> testStoneAgainstPaperIsLosing [
 
 	self assert: (Stone new play: Paper new) equals: #paper
 ]
