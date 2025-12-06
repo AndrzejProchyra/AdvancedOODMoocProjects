@@ -12,6 +12,12 @@ Stone >> play: anElement [
 ]
 
 { #category : 'as yet unclassified' }
+Stone >> play: anElement withResultHandler: aResultHandler [
+
+	anElement playStone: self withResultHandler: aResultHandler
+]
+
+{ #category : 'as yet unclassified' }
 Stone >> playAgainstPaper [
 
 	^ #paper
@@ -27,4 +33,22 @@ Stone >> playAgainstScissors [
 Stone >> playAgainstStone [
 
 	^ #draw
+]
+
+{ #category : 'as yet unclassified' }
+Stone >> playPaper: aPaper withResultHandler: aResultHandler [
+
+	aResultHandler paperWon
+]
+
+{ #category : 'as yet unclassified' }
+Stone >> playScissors: aScissors withResultHandler: aResultHandler [
+
+	aResultHandler stoneWon
+]
+
+{ #category : 'as yet unclassified' }
+Stone >> playStone: aStone withResultHandler: aResultHandler [
+
+	aResultHandler isDraw
 ]
