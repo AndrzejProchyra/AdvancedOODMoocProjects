@@ -1,18 +1,12 @@
 Class {
-	#name : 'Paper',
+	#name : 'Scissors',
 	#superclass : 'Object',
 	#category : 'StonePaperScissors',
 	#package : 'StonePaperScissors'
 }
 
 { #category : 'as yet unclassified' }
-Paper >> playAgainstScissors [
+Scissors >> play: anElement [
 
-	^ #scissors
-]
-
-{ #category : 'as yet unclassified' }
-Paper >> playAgainstStone [
-
-	^ #paper
+	^ anElement playAgainstScissors
 ]
