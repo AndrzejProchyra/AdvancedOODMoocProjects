@@ -12,6 +12,12 @@ Scissors >> play: anElement [
 ]
 
 { #category : 'as yet unclassified' }
+Scissors >> playAgainstPaper [
+
+	^ #scissors
+]
+
+{ #category : 'as yet unclassified' }
 Scissors >> playAgainstScissors [
 
 	^ #draw

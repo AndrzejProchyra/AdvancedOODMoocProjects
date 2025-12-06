@@ -12,6 +12,12 @@ Stone >> play: anElement [
 ]
 
 { #category : 'as yet unclassified' }
+Stone >> playAgainstPaper [
+
+	^ #paper
+]
+
+{ #category : 'as yet unclassified' }
 Stone >> playAgainstScissors [
 
 	^ #stone
