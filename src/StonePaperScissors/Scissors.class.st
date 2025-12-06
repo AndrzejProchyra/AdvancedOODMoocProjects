@@ -10,3 +10,9 @@ Scissors >> play: anElement [
 
 	^ anElement playAgainstScissors
 ]
+
+{ #category : 'as yet unclassified' }
+Scissors >> playAgainstStone [
+
+	^ #stone
+]
