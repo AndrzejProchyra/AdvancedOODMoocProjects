@@ -10,6 +10,6 @@ ENegationTest >> testEvaluate [
 
 	self
 		assert:
-		(ENegation new expression: (EConstant new value: 5)) evalutate
+		(ENegation new expression: (EConstant new value: 5)) evaluate
 		equals: -5
 ]

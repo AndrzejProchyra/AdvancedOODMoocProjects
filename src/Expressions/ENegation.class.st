@@ -9,7 +9,7 @@ Class {
 }
 
 { #category : 'instance creation' }
-ENegation >> evalutate [
+ENegation >> evaluate [
 
 	^ expression evaluate negated
 ]
