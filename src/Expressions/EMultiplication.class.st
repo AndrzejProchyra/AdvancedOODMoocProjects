@@ -41,6 +41,16 @@ EMultiplication >> left: anExpression [
 	left := anExpression
 ]
 
+{ #category : 'printing' }
+EMultiplication >> printOn: aStream [
+
+	aStream nextPut: $(.
+	aStream print: left.
+	aStream nextPutAll: ' * '.
+	aStream print: right.
+	aStream nextPut: $)
+]
+
 { #category : 'accessing' }
 EMultiplication >> right: anExpression [
 

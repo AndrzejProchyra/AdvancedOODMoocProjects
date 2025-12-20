@@ -9,6 +9,13 @@ Class {
 	#package : 'Expressions'
 }
 
+{ #category : 'examples' }
+EAddition class >> fivePlusThree [
+
+	<sampleInstance>
+	^ self left: (EConstant value: 5) right: (EConstant value: 3)
+]
+
 { #category : 'instance creation' }
 EAddition class >> left: anExpression right: anExpression2 [
 
@@ -27,6 +34,16 @@ EAddition >> evaluate [
 EAddition >> left: anExpression [
 
 	left := anExpression
+]
+
+{ #category : 'printing' }
+EAddition >> printOn: aStream [
+
+	aStream nextPut: $(.
+	aStream print: left.
+	aStream nextPutAll: ' + '.
+	aStream print: right.
+	aStream nextPut: $)
 ]
 
 { #category : 'accessing' }
