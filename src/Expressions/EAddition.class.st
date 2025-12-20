@@ -9,6 +9,14 @@ Class {
 	#package : 'Expressions'
 }
 
+{ #category : 'instance creation' }
+EAddition class >> left: anExpression right: anExpression2 [
+
+	^ self new
+		  left: anExpression;
+		  right: anExpression2
+]
+
 { #category : 'accessing' }
 EAddition >> evaluate [
 

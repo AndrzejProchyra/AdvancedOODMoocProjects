@@ -8,6 +8,12 @@ Class {
 	#package : 'Expressions'
 }
 
+{ #category : 'instance creation' }
+EConstant class >> value: anInteger [
+
+	^ self new value: anInteger
+]
+
 { #category : 'accessing' }
 EConstant >> evaluate [
 
