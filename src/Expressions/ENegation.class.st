@@ -26,6 +26,12 @@ ENegation >> expression: anExpression [
 	expression := anExpression
 ]
 
+{ #category : 'instance creation' }
+ENegation >> negated [
+
+	^ expression
+]
+
 { #category : 'printing' }
 ENegation >> printOn: aStream [
 
