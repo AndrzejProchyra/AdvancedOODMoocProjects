@@ -19,3 +19,9 @@ ENegation >> expression: anExpression [
 
 	expression := anExpression
 ]
+
+{ #category : 'instance creation' }
+ENegation >> negated [
+
+	^ self class new expression: self
+]

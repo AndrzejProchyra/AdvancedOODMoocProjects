@@ -22,6 +22,12 @@ EMultiplication >> left: anExpression [
 ]
 
 { #category : 'accessing' }
+EMultiplication >> negated [
+
+	^ ENegation new expression: self
+]
+
+{ #category : 'accessing' }
 EMultiplication >> right: anExpression [
 
 	right := anExpression
