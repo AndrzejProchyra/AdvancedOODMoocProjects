@@ -27,11 +27,7 @@ EAddition >> evaluate [
 ]
 
 { #category : 'printing' }
-EAddition >> printOn: aStream [
+EAddition >> operatorString [
 
-	aStream nextPut: $(.
-	aStream print: left.
-	aStream nextPutAll: ' + '.
-	aStream print: right.
-	aStream nextPut: $)
+	^ ' + '
 ]

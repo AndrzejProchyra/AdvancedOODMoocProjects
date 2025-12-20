@@ -14,10 +14,32 @@ EBinaryExpression class >> left: anExpression right: anExpression2 [
 	^ self subclassResponsibility
 ]
 
+{ #category : 'as yet unclassified' }
+EBinaryExpression >> evaluate [ 
+
+	self subclassResponsibility 
+]
+
 { #category : 'accessing' }
 EBinaryExpression >> left: anExpression [
 
 	left := anExpression
+]
+
+{ #category : 'printing' }
+EBinaryExpression >> operatorString [
+
+	self subclassResponsibility
+]
+
+{ #category : 'printing' }
+EBinaryExpression >> printOn: aStream [
+
+	aStream nextPut: $(.
+	aStream print: left.
+	aStream nextPutAll: self operatorString.
+	aStream print: right.
+	aStream nextPut: $)
 ]
 
 { #category : 'accessing' }

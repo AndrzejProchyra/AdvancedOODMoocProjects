@@ -32,11 +32,7 @@ EMultiplication >> evaluate [
 ]
 
 { #category : 'printing' }
-EMultiplication >> printOn: aStream [
+EMultiplication >> operatorString [
 
-	aStream nextPut: $(.
-	aStream print: left.
-	aStream nextPutAll: ' * '.
-	aStream print: right.
-	aStream nextPut: $)
+	^ ' * '
 ]
