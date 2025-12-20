@@ -9,6 +9,11 @@ Class {
 	#package : 'Expressions'
 }
 
+{ #category : 'instance creation' }
+EBinaryExpression class >> left: anExpression right: anExpression2 [ 
+	^ self subclassResponsibility
+]
+
 { #category : 'accessing' }
 EBinaryExpression >> left: anExpression [
 
