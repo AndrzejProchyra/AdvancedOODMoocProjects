@@ -1,0 +1,2 @@
+In this repo I follow along with the exercises described in [The Advanced Object-Oriented
+Design Mooc Companion](https://github.com/SquareBracketAssociates/booklet-AdvancedMicroProjects/releases/download/latest/MoocCompanion.pdf). This is the companion book for the Massive Open Online Course (MOOC) [Advanced Object-Oriented Design and Development with Pharo](https://advanced-design-mooc.pharo.org/).
