@@ -28,6 +28,12 @@ EConstant class >> value: anInteger [
 	^ self new value: anInteger
 ]
 
+{ #category : 'visiting' }
+EConstant >> accept: aVisitor [
+
+	^ aVisitor visitConstant: self
+]
+
 { #category : 'accessing' }
 EConstant >> evaluateWith: aBindingDictionary [
 
@@ -38,6 +44,12 @@ EConstant >> evaluateWith: aBindingDictionary [
 EConstant >> printOn: aStream [
 
 	aStream print: value
+]
+
+{ #category : 'evaluating' }
+EConstant >> value [
+
+	^ value
 ]
 
 { #category : 'accessing' }
