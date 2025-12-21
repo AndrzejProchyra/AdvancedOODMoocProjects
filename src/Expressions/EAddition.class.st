@@ -13,9 +13,10 @@ EAddition class >> fivePlusThree [
 ]
 
 { #category : 'accessing' }
-EAddition >> evaluate [
+EAddition >> evaluateWith: aBindingDictionary [
 
-	^ left evaluate + right evaluate
+	^ (left evaluateWith: aBindingDictionary)
+	  + (right evaluateWith: aBindingDictionary)
 ]
 
 { #category : 'printing' }

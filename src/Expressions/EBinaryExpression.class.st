@@ -18,7 +18,7 @@ EBinaryExpression class >> left: anExpression right: anExpression2 [
 ]
 
 { #category : 'as yet unclassified' }
-EBinaryExpression >> evaluate [
+EBinaryExpression >> evaluateWith: aBindingDictionary [
 
 	self subclassResponsibility
 ]

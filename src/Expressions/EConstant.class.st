@@ -29,7 +29,7 @@ EConstant class >> value: anInteger [
 ]
 
 { #category : 'accessing' }
-EConstant >> evaluate [
+EConstant >> evaluateWith: aBindingDictionary [
 
 	^ value
 ]

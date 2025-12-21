@@ -6,9 +6,10 @@ Class {
 }
 
 { #category : 'as yet unclassified' }
-EDivision >> evaluate [
+EDivision >> evaluateWith: aBindingDictionary [
 
-	^ left evaluate / right evaluate
+	^ (left evaluateWith: aBindingDictionary)
+	  / (right evaluateWith: aBindingDictionary)
 ]
 
 { #category : 'printing' }

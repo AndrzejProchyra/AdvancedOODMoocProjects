@@ -18,9 +18,10 @@ EMultiplication class >> fiveTimesThree [
 ]
 
 { #category : 'accessing' }
-EMultiplication >> evaluate [
+EMultiplication >> evaluateWith: aBindingDictionary [
 
-	^ left evaluate * right evaluate
+	^ (left evaluateWith: aBindingDictionary)
+	  * (right evaluateWith: aBindingDictionary)
 ]
 
 { #category : 'printing' }
