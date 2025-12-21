@@ -17,14 +17,6 @@ EMultiplication class >> fiveTimesThree [
 		  right: ep2
 ]
 
-{ #category : 'instance creation' }
-EMultiplication class >> left: anExpression right: anExpression2 [
-
-	^ self new
-		  left: anExpression;
-		  right: anExpression2
-]
-
 { #category : 'accessing' }
 EMultiplication >> evaluate [
 

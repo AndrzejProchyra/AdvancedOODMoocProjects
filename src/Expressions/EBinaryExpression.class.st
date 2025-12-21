@@ -10,14 +10,17 @@ Class {
 }
 
 { #category : 'instance creation' }
-EBinaryExpression class >> left: anExpression right: anExpression2 [ 
-	^ self subclassResponsibility
+EBinaryExpression class >> left: anExpression right: anExpression2 [
+
+	^ self new
+		  left: anExpression;
+		  right: anExpression2
 ]
 
 { #category : 'as yet unclassified' }
-EBinaryExpression >> evaluate [ 
+EBinaryExpression >> evaluate [
 
-	self subclassResponsibility 
+	self subclassResponsibility
 ]
 
 { #category : 'accessing' }
