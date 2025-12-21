@@ -37,7 +37,7 @@ EConstant >> accept: aVisitor [
 { #category : 'accessing' }
 EConstant >> evaluateWith: aBindingDictionary [
 
-	^ value
+	^ self accept: EEvaluatorVisitor new
 ]
 
 { #category : 'printing' }
