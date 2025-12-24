@@ -24,6 +24,12 @@ EBinaryExpression >> evaluateWith: aBindingDictionary [
 ]
 
 { #category : 'accessing' }
+EBinaryExpression >> left [
+
+	^ left
+]
+
+{ #category : 'accessing' }
 EBinaryExpression >> left: anExpression [
 
 	left := anExpression
@@ -43,6 +49,12 @@ EBinaryExpression >> printOn: aStream [
 	aStream nextPutAll: self operatorString.
 	aStream print: right.
 	aStream nextPut: $)
+]
+
+{ #category : 'accessing' }
+EBinaryExpression >> right [
+
+	^ right
 ]
 
 { #category : 'accessing' }

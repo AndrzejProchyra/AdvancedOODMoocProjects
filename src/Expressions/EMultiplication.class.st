@@ -18,6 +18,12 @@ EMultiplication class >> fiveTimesThree [
 ]
 
 { #category : 'accessing' }
+EMultiplication >> accept: aVisitor [
+
+	^ aVisitor visitMultiplication: self
+]
+
+{ #category : 'accessing' }
 EMultiplication >> evaluateWith: aBindingDictionary [
 
 	^ (left evaluateWith: aBindingDictionary)

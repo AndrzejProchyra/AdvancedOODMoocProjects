@@ -25,20 +25,8 @@ EAddition >> evaluateWith: aBindingDictionary [
 	  + (right evaluateWith: aBindingDictionary)
 ]
 
-{ #category : 'accessing' }
-EAddition >> left [
-
-	^ left
-]
-
 { #category : 'printing' }
 EAddition >> operatorString [
 
 	^ ' + '
-]
-
-{ #category : 'accessing' }
-EAddition >> right [
-
-	^ right
 ]
