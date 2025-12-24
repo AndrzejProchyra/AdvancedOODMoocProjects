@@ -5,12 +5,6 @@ Class {
 	#package : 'Expressions'
 }
 
-{ #category : 'visiting' }
-EExpression >> accept: aVisitor [
-
-	^ aVisitor visitAddition: self
-]
-
 { #category : 'as yet unclassified' }
 EExpression >> evaluateWith: aBindingDictionary [
 

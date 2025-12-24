@@ -12,6 +12,12 @@ EAddition class >> fivePlusThree [
 	^ self left: (EConstant value: 5) right: (EConstant value: 3)
 ]
 
+{ #category : 'visiting' }
+EAddition >> accept: aVisitor [
+
+	^ aVisitor visitAddition: self
+]
+
 { #category : 'accessing' }
 EAddition >> evaluateWith: aBindingDictionary [
 
