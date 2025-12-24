@@ -8,7 +8,7 @@ Class {
 { #category : 'visiting' }
 EExpression >> accept: aVisitor [
 
-	self subclassResponsibility
+	^ aVisitor visitAddition: self
 ]
 
 { #category : 'as yet unclassified' }
