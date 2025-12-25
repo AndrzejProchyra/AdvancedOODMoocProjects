@@ -20,8 +20,12 @@ EEvaluatorVisitor >> visitConstant: anEConstant [
 { #category : 'visiting' }
 EEvaluatorVisitor >> visitDivision: anEDivision [
 
-	^ (anEDivision numerator accept: self)
-	  / (anEDivision denominator accept: self)
+	| numerator denominator |
+	numerator := anEDivision numerator accept: self.
+	denominator := anEDivision denominator accept: self.
+	denominator = 0 ifTrue: [ EZeroDenominator signal ].
+
+	^ numerator / denominator
 ]
 
 { #category : 'visiting' }
