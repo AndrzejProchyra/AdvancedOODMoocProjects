@@ -5,6 +5,12 @@ Class {
 	#package : 'Expressions'
 }
 
+{ #category : 'testing' }
+EExpression class >> isAbstract [
+
+	^ true
+]
+
 { #category : 'visiting' }
 EExpression >> accept: aVisitor [
 
