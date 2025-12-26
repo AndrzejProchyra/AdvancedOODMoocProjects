@@ -49,3 +49,12 @@ EPrinterVisitorTest >> testVisitMultiplication [
 		assert: (expression accept: EPrinterVisitor new)
 		equals: '(8 * 7)'
 ]
+
+{ #category : 'tests' }
+EPrinterVisitorTest >> testVisitNegation [
+
+	self
+		assert: ((ENegation expression: (EConstant value: 42)) accept:
+				 EPrinterVisitor new)
+		equals: '-42'
+]

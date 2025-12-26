@@ -37,3 +37,9 @@ EPrinterVisitor >> visitMultiplication: anEMultiplication [
 	right := anEMultiplication right accept: self.
 	^ '(' , left , ' * ' , right , ')'
 ]
+
+{ #category : 'visiting' }
+EPrinterVisitor >> visitNegation: anENegation [
+
+	^ '-' , (anENegation expression accept: self)
+]
