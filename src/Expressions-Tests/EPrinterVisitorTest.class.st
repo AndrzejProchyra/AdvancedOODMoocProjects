@@ -27,6 +27,18 @@ EPrinterVisitorTest >> testVisitConstant [
 ]
 
 { #category : 'tests' }
+EPrinterVisitorTest >> testVisitDivision [
+
+	| expression |
+	expression := EDivision
+		              numerator: (EConstant value: 8)
+		              denominator: (EConstant value: 7).
+	self
+		assert: (expression accept: EPrinterVisitor new)
+		equals: '(8 / 7)'
+]
+
+{ #category : 'tests' }
 EPrinterVisitorTest >> testVisitMultiplication [
 
 	| expression |

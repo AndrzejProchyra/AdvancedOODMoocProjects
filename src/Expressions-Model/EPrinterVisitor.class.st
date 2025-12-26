@@ -21,6 +21,15 @@ EPrinterVisitor >> visitConstant: anEConstant [
 ]
 
 { #category : 'visiting' }
+EPrinterVisitor >> visitDivision: anEDivision [
+
+	| numerator denominator |
+	numerator := anEDivision numerator accept: self.
+	denominator := anEDivision denominator accept: self.
+	^ '(' , numerator , ' / ' , denominator , ')'
+]
+
+{ #category : 'visiting' }
 EPrinterVisitor >> visitMultiplication: anEMultiplication [
 
 	| left right |
