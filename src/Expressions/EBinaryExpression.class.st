@@ -17,8 +17,8 @@ EBinaryExpression class >> left: anExpression right: anExpression2 [
 		  right: anExpression2
 ]
 
-{ #category : 'as yet unclassified' }
-EBinaryExpression >> evaluateWith: aBindingDictionary [
+{ #category : 'visiting' }
+EBinaryExpression >> accept: aVisitor [
 
 	self subclassResponsibility
 ]

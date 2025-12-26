@@ -5,10 +5,16 @@ Class {
 	#package : 'Expressions'
 }
 
-{ #category : 'as yet unclassified' }
+{ #category : 'visiting' }
+EExpression >> accept: aVisitor [
+
+	self subclassResponsibility
+]
+
+{ #category : 'accessing' }
 EExpression >> evaluateWith: aBindingDictionary [
 
-	^ self subclassResponsibility
+	^ self accept: EEvaluatorVisitor new
 ]
 
 { #category : 'instance creation' }
