@@ -25,3 +25,15 @@ EPrinterVisitorTest >> testVisitConstant [
 
 	self assert: (expression accept: EPrinterVisitor new) equals: '42'
 ]
+
+{ #category : 'tests' }
+EPrinterVisitorTest >> testVisitMultiplication [
+
+	| expression |
+	expression := EMultiplication
+		              left: (EConstant value: 8)
+		              right: (EConstant value: 7).
+	self
+		assert: (expression accept: EPrinterVisitor new)
+		equals: '(8 * 7)'
+]

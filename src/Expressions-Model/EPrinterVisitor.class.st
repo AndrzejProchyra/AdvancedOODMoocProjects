@@ -19,3 +19,12 @@ EPrinterVisitor >> visitConstant: anEConstant [
 
 	^ anEConstant value asString
 ]
+
+{ #category : 'visiting' }
+EPrinterVisitor >> visitMultiplication: anEMultiplication [
+
+	| left right |
+	left := anEMultiplication left accept: self.
+	right := anEMultiplication right accept: self.
+	^ '(' , left , ' * ' , right , ')'
+]
