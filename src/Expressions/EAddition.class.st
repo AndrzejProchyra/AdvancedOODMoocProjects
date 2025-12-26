@@ -18,13 +18,6 @@ EAddition >> accept: aVisitor [
 	^ aVisitor visitAddition: self
 ]
 
-{ #category : 'accessing' }
-EAddition >> evaluateWith: aBindingDictionary [
-
-	^ (left evaluateWith: aBindingDictionary)
-	  + (right evaluateWith: aBindingDictionary)
-]
-
 { #category : 'printing' }
 EAddition >> operatorString [
 

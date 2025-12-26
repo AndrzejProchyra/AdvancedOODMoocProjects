@@ -15,12 +15,6 @@ EVariable >> accept: aVisitor [
 ]
 
 { #category : 'accessing' }
-EVariable >> evaluateWith: aBindingDictionary [
-
-	^ aBindingDictionary at: id
-]
-
-{ #category : 'accessing' }
 EVariable >> id [
 
 	^ id

@@ -18,9 +18,12 @@ EExpression >> accept: aVisitor [
 ]
 
 { #category : 'accessing' }
-EExpression >> evaluateWith: aBindingDictionary [
+EExpression >> evaluateWith: anEnvironment [
 
-	^ self accept: EEvaluatorVisitor new
+	| visitor |
+	visitor := EEvaluatorVisitor new.
+	visitor bindings: anEnvironment.
+	^ self accept: visitor
 ]
 
 { #category : 'instance creation' }

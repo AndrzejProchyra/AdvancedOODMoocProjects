@@ -20,12 +20,6 @@ ENegation >> accept: aVisitor [
 	^ aVisitor visitNegation: self
 ]
 
-{ #category : 'instance creation' }
-ENegation >> evaluateWith: aBindingDictionary [
-
-	^ (expression evaluateWith: aBindingDictionary) negated
-]
-
 { #category : 'accessing' }
 ENegation >> expression [
 

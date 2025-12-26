@@ -23,13 +23,6 @@ EMultiplication >> accept: aVisitor [
 	^ aVisitor visitMultiplication: self
 ]
 
-{ #category : 'accessing' }
-EMultiplication >> evaluateWith: aBindingDictionary [
-
-	^ (left evaluateWith: aBindingDictionary)
-	  * (right evaluateWith: aBindingDictionary)
-]
-
 { #category : 'printing' }
 EMultiplication >> operatorString [
 

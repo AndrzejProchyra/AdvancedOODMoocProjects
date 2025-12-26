@@ -21,13 +21,6 @@ EDivision >> denominator [
 	^ denominator
 ]
 
-{ #category : 'as yet unclassified' }
-EDivision >> evaluateWith: aBindingDictionary [
-
-	^ (left evaluateWith: aBindingDictionary)
-	  / (right evaluateWith: aBindingDictionary)
-]
-
 { #category : 'accessing' }
 EDivision >> numerator [
 

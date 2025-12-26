@@ -34,12 +34,6 @@ EConstant >> accept: aVisitor [
 	^ aVisitor visitConstant: self
 ]
 
-{ #category : 'accessing' }
-EConstant >> evaluateWith: aBindingDictionary [
-
-	^ self accept: EEvaluatorVisitor new
-]
-
 { #category : 'printing' }
 EConstant >> printOn: aStream [
 
