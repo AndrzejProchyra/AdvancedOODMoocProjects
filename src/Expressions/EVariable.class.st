@@ -8,6 +8,12 @@ Class {
 	#package : 'Expressions'
 }
 
+{ #category : 'visiting' }
+EVariable >> accept: aVisitor [
+
+	^ aVisitor visitVariable: self
+]
+
 { #category : 'accessing' }
 EVariable >> evaluateWith: aBindingDictionary [
 

@@ -8,6 +8,12 @@ Class {
 	#package : 'Expressions-Model'
 }
 
+{ #category : 'accessing' }
+EEvaluatorVisitor >> at: anId put: aValue [
+
+	bindings at: anId put: aValue
+]
+
 { #category : 'initialization' }
 EEvaluatorVisitor >> initialize [
 
