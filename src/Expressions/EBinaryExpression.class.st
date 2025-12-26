@@ -12,7 +12,7 @@ Class {
 { #category : 'testing' }
 EBinaryExpression class >> isAbstract [
 
-	^ true
+	^ self = EBinaryExpression
 ]
 
 { #category : 'instance creation' }

@@ -1,9 +1,19 @@
 Class {
 	#name : 'EEvaluatorVisitor',
 	#superclass : 'Object',
+	#instVars : [
+		'bindings'
+	],
 	#category : 'Expressions-Model',
 	#package : 'Expressions-Model'
 }
+
+{ #category : 'initialization' }
+EEvaluatorVisitor >> initialize [
+
+	super initialize.
+	bindings := Dictionary new
+]
 
 { #category : 'visiting' }
 EEvaluatorVisitor >> visitAddition: anEAddition [
@@ -39,4 +49,10 @@ EEvaluatorVisitor >> visitMultiplication: anEMultiplication [
 EEvaluatorVisitor >> visitNegation: anENegation [
 
 	^ (anENegation expression accept: self) negated
+]
+
+{ #category : 'initialization' }
+EEvaluatorVisitor >> visitVariable: aVariable [
+
+	^ bindings at: aVariable id
 ]

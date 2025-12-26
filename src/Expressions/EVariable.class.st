@@ -8,10 +8,16 @@ Class {
 	#package : 'Expressions'
 }
 
-{ #category : 'as yet unclassified' }
+{ #category : 'accessing' }
 EVariable >> evaluateWith: aBindingDictionary [
 
 	^ aBindingDictionary at: id
+]
+
+{ #category : 'accessing' }
+EVariable >> id [
+
+	^ id
 ]
 
 { #category : 'accessing' }

@@ -8,7 +8,7 @@ Class {
 { #category : 'testing' }
 EExpression class >> isAbstract [
 
-	^ true
+	^ self = EExpression
 ]
 
 { #category : 'visiting' }
