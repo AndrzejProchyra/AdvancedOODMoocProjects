@@ -1,31 +1,9 @@
 Class {
 	#name : 'EEvaluatorVisitor',
-	#superclass : 'Object',
-	#instVars : [
-		'bindings'
-	],
+	#superclass : 'EVisitor',
 	#category : 'Expressions-Model',
 	#package : 'Expressions-Model'
 }
-
-{ #category : 'accessing' }
-EEvaluatorVisitor >> at: anId put: aValue [
-
-	bindings at: anId put: aValue
-]
-
-{ #category : 'accessing' }
-EEvaluatorVisitor >> bindings: aDictionary [
-
-	bindings := aDictionary
-]
-
-{ #category : 'initialization' }
-EEvaluatorVisitor >> initialize [
-
-	super initialize.
-	bindings := Dictionary new
-]
 
 { #category : 'visiting' }
 EEvaluatorVisitor >> visitAddition: anEAddition [

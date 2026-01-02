@@ -58,3 +58,16 @@ EPrinterVisitorTest >> testVisitNegation [
 				 EPrinterVisitor new)
 		equals: '-42'
 ]
+
+{ #category : 'tests' }
+EPrinterVisitorTest >> testVisitVariable [
+
+	| expression result visitor |
+	expression := EVariable id: #answerToTheQuestion.
+
+	visitor := EPrinterVisitor new.
+	visitor at: #answerToTheQuestion put: 42.
+
+	result := expression accept: visitor.
+	self assert: result equals: '42'
+]

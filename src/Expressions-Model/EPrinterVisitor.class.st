@@ -1,6 +1,6 @@
 Class {
 	#name : 'EPrinterVisitor',
-	#superclass : 'Object',
+	#superclass : 'EVisitor',
 	#category : 'Expressions-Model',
 	#package : 'Expressions-Model'
 }
