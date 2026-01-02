@@ -43,3 +43,9 @@ EPrinterVisitor >> visitNegation: anENegation [
 
 	^ '-' , (anENegation expression accept: self)
 ]
+
+{ #category : 'visiting' }
+EPrinterVisitor >> visitVariable: aVariable [
+
+	^ (self bindings at: aVariable id) asString
+]

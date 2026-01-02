@@ -41,8 +41,8 @@ EEvaluatorVisitor >> visitNegation: anENegation [
 	^ (anENegation expression accept: self) negated
 ]
 
-{ #category : 'initialization' }
+{ #category : 'visiting' }
 EEvaluatorVisitor >> visitVariable: aVariable [
 
-	^ bindings at: aVariable id
+	^ self bindings at: aVariable id
 ]

@@ -15,6 +15,18 @@ EVisitor class >> isAbstract [
 ]
 
 { #category : 'accessing' }
+EVisitor >> at: anId put: aValue [
+
+	self bindings at: anId put: aValue
+]
+
+{ #category : 'accessing' }
+EVisitor >> bindings [
+
+	^ bindings
+]
+
+{ #category : 'accessing' }
 EVisitor >> bindings: aDictionary [
 
 	bindings := aDictionary
