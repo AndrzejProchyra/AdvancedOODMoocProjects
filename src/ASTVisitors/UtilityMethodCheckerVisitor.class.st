@@ -8,6 +8,13 @@ Class {
 	#package : 'ASTVisitors'
 }
 
+{ #category : 'initialization' }
+UtilityMethodCheckerVisitor >> initialize [
+
+	super initialize.
+	result := true
+]
+
 { #category : 'accessing' }
 UtilityMethodCheckerVisitor >> result [
 
